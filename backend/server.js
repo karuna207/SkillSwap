@@ -9,7 +9,7 @@ import reviewRoutes from "./routes/reviewRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 
 dotenv.config();
-connectDB();
+await connectDB();
 
 const app = express();
 app.use(cors());
