@@ -6,9 +6,9 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import CoursesPage from "./pages/CoursePage";
 import CourseDetailPage from "./pages/CourseDetailPage";
-// import CreateCoursePage from "./pages/CreateCoursePage";
-// import SwapRequestsPage from "./pages/SwapRequestsPage";
-// import ProfilePage from "./pages/ProfilePage";
+import CreateCoursePage from "./pages/CreateCoursePage";
+import SwapRequestsPage from "./pages/SwapRequestsPage";
+import ProfilePage from "./pages/ProfilePage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import './index.css'; // or the CSS file where Tailwind is included
 
@@ -24,9 +24,9 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
             <Route path="/courses/:id" element={<CourseDetailPage />} />
-            {/* <Route path="/create-course" element={<ProtectedRoute><CreateCoursePage/></ProtectedRoute>} />
+            <Route path="/create-course" element={<ProtectedRoute><CreateCoursePage/></ProtectedRoute>} />
             <Route path="/swap-requests" element={<ProtectedRoute><SwapRequestsPage/></ProtectedRoute>} />
-            <Route path="/profile" element={<ProtectedRoute><ProfilePage/></ProtectedRoute>} /> */}
+            <Route path="/profile" element={<ProtectedRoute><ProfilePage/></ProtectedRoute>} />
           </Routes>
         </main>
         <Footer />

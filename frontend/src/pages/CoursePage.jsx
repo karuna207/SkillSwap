@@ -10,7 +10,8 @@ const CoursesPage = () => {
     const load = async () => {
       try {
         const data = await fetchCourses();
-        setCourses(data);
+        setCourses(data); 
+        console.log(data);
       } catch (err) {
         console.error(err);
         alert("Failed to load courses");
